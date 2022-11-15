@@ -6,10 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lemystere</title>
     <link rel="stylesheet" href="../dist/output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
 </head>
 
-<body>
+<body class="bg-black text-amber-100">
+    <div class="container mx-auto">
+        <!-- navbar -->
+        <nav>
 
+            <div class="flex justify-between sm:block px-4">
+                <!-- Logo -->
+                <div class="py-3">
+                    <h1>Lemystere</h1>
+                </div>
+                <div class="hidden sm:block h-px w-full bg-amber-100"></div>
+                <!-- primary nav -->
+                <div class="hidden sm:flex flex-row sm:space-x-4 py-2">
+                    <a href="#" class="hover:text-white">Parfume</a>
+
+                    <a href="#" class="hover:text-white">Soin de la peau</a>
+
+                    <a href="#aboutUs" class="hover:text-white">A propo de nous </a>
+
+                    <a href="#" class="hover:text-white">nous contacter</a>
+                </div>
+                <!-- mobile button goes here -->
+                <div class="sm:hidden flex items-center">
+                    <button id="mobile-menu-button"> 
+                            <i class='bx bx-menu' style='color:#ffffff'></i>
+                        </button>
+                </div>
+            </div>
+
+
+            <!-- mobile nav -->
+            <div class=" hidden sm:hidden" id="mobile-menu">
+                <a href="#" class="block py-2 px-4 text-sm hover:text-white">Parfume</a>
+
+                <a href="#" class="block py-2 px-4 text-sm hover:text-white">Soin de la peau</a>
+
+                <a href="#" class="block py-2 px-4 text-sm hover:text-white">A propo de nous </a>
+
+                <a href="#" class="block py-2 px-4 text-sm hover:text-white">nous contacter</a>
+            </div>
+        </nav>
+
+        <!-- hero section -->
+        <section class="mb-4">
+            <div>
+                <img src="../images/Top 5 profumi primavera estate 2021_ le fragranze femminili da provare.jpg" class="w-full h-4/5" alt="" srcset="">
+            </div>
+        </section>
+
+        <!-- other perfume -->
+        <section class="mb-4">
+            <div>
+                <p class="text-center">Auo de parfume</p>
+                <div class="flex justify-around items-center">
+                    <div class="flex justify-center items-center w-52 ">
+                        <img src="../images/black.png" alt="" srcset="">
+                    </div>
+                    <div class="flex justify-center items-center w-52 ">
+                        <img src="../images/black.png" alt="" srcset="">
+                    </div>
+                    <div class="flex justify-center items-center w-52">
+                        <img src="../images/black.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about us -->
+        <section class="mb-4" id="aboutUs">
+
+            <p class="text-center mb-12">A propo de nous</p>
+            <div class="flex justify-center">
+                <div class="px-4 w-96">
+                    <p class="mb-4">A propo de nous pour des parfumes</p>
+                    <p class="text-justify mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, including versions of Lorem Ipsum.
+                    </p>
+
+                    <p class="text-justify ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+                <div class="hidden sm:block sm:w-96 md:w-2/5">
+                    <div class="flex justify-center items-center">
+                        <div class="flex justify-center  w-64 p-4">
+                            <img src="../images/perfume.jpg" alt="" srcset="">
+                        </div>
+                        <div class="flex justify-center w-64 p-4">
+                            <img src="../images/Jenna Coleman.jpg" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="flex justify-center w-full h-60">
+                        <img src="../images/Premium Photo _ Men's perfume in smoke.jpg" alt="" srcset="">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- some skincare products -->
+        <section class="mb-4"></section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
