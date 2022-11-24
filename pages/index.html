@@ -23,13 +23,15 @@
                 <div class="hidden sm:block h-px w-full bg-amber-100"></div>
                 <!-- primary nav -->
                 <div class="hidden sm:flex flex-row sm:space-x-4 py-2">
-                    <a href="#" class="hover:text-white">Parfume</a>
+                    <a href="../pages/index.html" class="hover:text-white">Home</a>
 
-                    <a href="#" class="hover:text-white">Soin de la peau</a>
+                    <a href="../pages/perfume.html" class="hover:text-white">Parfume</a>
+
+                    <a href="../pages/skincare.html" class="hover:text-white">Soin de la peau</a>
 
                     <a href="#aboutUs" class="hover:text-white">A propo de nous </a>
 
-                    <a href="#" class="hover:text-white">nous contacter</a>
+                    <a href="#contactUs" class="hover:text-white">nous contacter</a>
                 </div>
                 <!-- mobile button goes here -->
                 <div class="sm:hidden flex items-center">
@@ -42,13 +44,15 @@
 
             <!-- mobile nav -->
             <div class=" hidden sm:hidden" id="mobile-menu">
-                <a href="#" class="block py-2 px-4 text-sm hover:text-white">Parfume</a>
+                <a href="../pages/index.html" class="block py-2 px-4 text-sm hover:text-white">Home</a>
 
-                <a href="#" class="block py-2 px-4 text-sm hover:text-white">Soin de la peau</a>
+                <a href="../pages/perfume.html" class="block py-2 px-4 text-sm hover:text-white">Parfume</a>
 
-                <a href="#" class="block py-2 px-4 text-sm hover:text-white">A propo de nous </a>
+                <a href="../pages/skincare.html" class="block py-2 px-4 text-sm hover:text-white">Soin de la peau</a>
 
-                <a href="#" class="block py-2 px-4 text-sm hover:text-white">nous contacter</a>
+                <a href="#aboutUs" class="block py-2 px-4 text-sm hover:text-white">A propo de nous </a>
+
+                <a href="#contactUs" class="block py-2 px-4 text-sm hover:text-white">nous contacter</a>
             </div>
         </nav>
 
@@ -62,7 +66,7 @@
 
             <!-- other perfume -->
             <section class="mb-4">
-                <p class="text-center">Auo de parfume</p>
+                <p class="text-center text-xl">Auo de parfume</p>
                 <div class="flex justify-around items-center">
                     <div class="flex justify-center items-center w-52 ">
                         <img src="../images/black.png" alt="" srcset="">
@@ -77,31 +81,31 @@
             </section>
 
             <!-- about us -->
-            <section class="mb-4" id="aboutUs">
+            <section class="mb-12" id="aboutUs">
 
-                <p class="text-center mb-12">A propo de nous</p>
-                <div class="flex justify-center">
-                    <div class="px-4 w-96">
+                <p class="text-center mb-12 text-xl">A propo de nous</p>
+                <div class="flex justify-center items-center">
+                    <div class="px-4 w-96 text-sm md:text-base">
                         <p class="mb-4">A propo de nous pour des parfumes</p>
                         <p class="text-justify mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                            specimen book. It has survived not only five centuries, including versions of Lorem Ipsum.
+                            specimen book. It Ipsum.
                         </p>
 
                         <p class="text-justify ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                            specimen book. It has survived not only five Aldus PageMaker including versions of Lorem Ipsum.
+                            specimen book.versions of Lorem Ipsum.
                         </p>
                     </div>
                     <div class="hidden sm:block sm:w-96 md:w-2/5">
                         <div class="flex justify-center items-center">
-                            <div class="flex justify-center  w-64 p-4">
-                                <img src="../images/perfume.jpg" alt="" srcset="">
+                            <div class="flex justify-center w-full h-full p-1">
+                                <img src="../images/perfume.jpg" alt="" class=" w-full h-full" srcset="">
                             </div>
-                            <div class="flex justify-center w-64 p-4">
-                                <img src="../images/Jenna Coleman.jpg" alt="" srcset="">
+                            <div class="flex justify-center w-full h-full p-1">
+                                <img src="../images/Jenna Coleman.jpg" class=" w-full h-full" alt="" srcset="">
                             </div>
                         </div>
-                        <div class="flex justify-center w-full h-60">
-                            <img src="../images/Premium Photo _ Men's perfume in smoke.jpg" alt="" srcset="">
+                        <div class="flex justify-center w-full h-full h-40">
+                            <img src="../images/Premium Photo _ Men's perfume in smoke.jpg" class=" w-full h-full" alt="" srcset="">
                         </div>
                     </div>
 
@@ -110,7 +114,7 @@
             </section>
             <!-- some skincare products -->
             <section class="mb-4">
-                <p class="text-center">Soin de la peau</p>
+                <p class="text-center text-xl">Soin de la peau</p>
                 <div class="flex justify-around items-center">
                     <div class="flex justify-center items-center w-52 ">
                         <img src="../images/black.png" alt="" srcset="">
@@ -125,17 +129,18 @@
             </section>
 
             <!-- Contact Us -->
-            <section>
-                <div>
-                    <form action="#" method="post" class="w-full md:w-6/12 p-4 md:p-2 shadow-[#fffbeb]">
+            <section id="contactUs">
+                <div class="text-center">
+                    <h1 class="mb-4 text-xl">Nous Contacter</h1>
+                    <form action="#" method="post" class="w-full sm:w-4/6 md:w-3/6 lg:w-2/6 mx-auto  p-4 md:p-2 shadow-[#fffbeb]">
                         <div class="mb-4">
-                            <input class="w-full bg-black p-1 px-3 border border-red-500 rounded" type="text" name="name" id="name" placeholder="Full Name">
+                            <input class="w-full bg-black p-1 px-3 border border-gray-400 rounded" type="text" name="name" id="name" placeholder="Full Name">
                         </div>
                         <div class="mb-4">
-                            <input class="w-full bg-black p-1 px-3 border border-amber-100 rounded" type="email" name="email" id="email" placeholder="Email">
+                            <input class="w-full bg-black p-1 px-3 border border-gray-400 rounded" type="email" name="email" id="email" placeholder="Email">
                         </div>
                         <div class="mb-4">
-                            <textarea class="w-full bg-black p-1 px-3 border border-amber-100 rounded" name="message" id="message" cols="30" rows="10" placeholder="TYpe Your Message ..."></textarea>
+                            <textarea class="w-full bg-black p-1 px-3 border border-gray-400 rounded" name="message" id="message" cols="20" rows="5" placeholder="Type Your Message ..."></textarea>
                         </div>
                     </form>
 
@@ -146,10 +151,10 @@
 
 
         <!-- footer -->
-        <footer class="my-4">
-            <div class="h-px w-full bg-amber-100 mb-4"></div>
-            <div class="text-xs text-right">
-                <p class="text-right text-xs"> specimen book. It has survived not only five centuries, including versions of Lorem Ipsum</p>
+        <footer class="my-4 sm:px-4">
+            <div class="h-px w-full bg-amber-100 mb-2"></div>
+            <div class="text-sm px-3 sm:px-0 text-justify">
+                <p class=""> specimen book. It has survived not only five centuries, including versions of Lorem Ipsum</p>
             </div>
         </footer>
     </div>

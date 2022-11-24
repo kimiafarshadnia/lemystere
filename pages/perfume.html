@@ -1,16 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lemystere</title>
     <link rel="stylesheet" href="../dist/output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
 </head>
 
-<body>
+<body class="bg-black text-amber-100">
+    <div class="container mx-auto">
+        <!-- navbar -->
+        <nav>
 
+            <div class="flex justify-between sm:block px-4">
+                <!-- Logo -->
+                <div class="py-3">
+                    <h1>Lemystere</h1>
+                </div>
+                <div class="hidden sm:block h-px w-full bg-amber-100"></div>
+                <!-- primary nav -->
+                <div class="hidden sm:flex flex-row sm:space-x-4 py-2">
+                    <a href="../pages/index.html" class="hover:text-white">Home</a>
+
+                    <a href="../pages/perfume.html" class="hover:text-white">Parfume</a>
+
+                    <a href="../pages/skincare.html" class="hover:text-white">Soin de la peau</a>
+
+                    <a href="../pages/index.html" class="hover:text-white">A propo de nous </a>
+
+                    <a href="../pages/index.html" class="hover:text-white">nous contacter</a>
+                </div>
+                <!-- mobile button goes here -->
+                <div class="sm:hidden flex items-center">
+                    <button id="mobile-menu-button"> 
+                            <i class='bx bx-menu' style='color:#ffffff'></i>
+                        </button>
+                </div>
+            </div>
+
+
+            <!-- mobile nav -->
+            <div class=" hidden sm:hidden" id="mobile-menu">
+                <a href="../pages/index.html" class="block py-2 px-4 text-sm hover:text-white">Home</a>
+
+                <a href="../pages/perfume.html" class="block py-2 px-4 text-sm hover:text-white">Parfume</a>
+
+                <a href="../pages/skincare.html" class="block py-2 px-4 text-sm hover:text-white">Soin de la peau</a>
+
+                <a href="../pages/index.html" class="block py-2 px-4 text-sm hover:text-white">A propo de nous </a>
+
+                <a href="../pages/index.html" class="block py-2 px-4 text-sm hover:text-white">nous contacter</a>
+            </div>
+        </nav>
+
+        <main>
+
+        </main>
+
+
+        <!-- footer -->
+        <footer class="my-4">
+            <div class="h-px w-full bg-amber-100 mb-2"></div>
+            <div class="text-sm px-3 md:px-0 text-justify">
+                <p class=""> specimen book. It has survived not only five centuries, including versions of Lorem Ipsum</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
