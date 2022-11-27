@@ -10,12 +10,12 @@
     <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
 </head>
 
-<body class="bg-black text-amber-100">
-    <div class="container mx-auto">
+<body class="bg-black">
+    <div class="container mx-auto lg:px-2 xl:px-4">
         <!-- navbar -->
         <nav>
 
-            <div class="flex justify-between sm:block px-4 sm:px-0">
+            <div class="flex justify-between sm:block px-4 sm:px-0 text-amber-100">
                 <!-- Logo -->
                 <div class="py-3">
                     <h1>Lemystere</h1>
@@ -43,7 +43,7 @@
 
 
             <!-- mobile nav -->
-            <div class=" hidden sm:hidden" id="mobile-menu">
+            <div class=" hidden sm:hidden text-amber-100" id="mobile-menu">
                 <a href="../pages/index.html" class="block py-2 px-4 text-sm hover:text-white">Home</a>
 
                 <a href="../pages/perfume.html" class="block py-2 px-4 text-sm hover:text-white">Parfume</a>
@@ -57,15 +57,63 @@
         </nav>
 
         <main>
+            <!-- hero section -->
+            <section class=" mb-4 md:mb-8">
+                <div class="flex justify-between items-center md:h-96">
+                    <img src="../images/Fahrenheit de Christian Dior, le parfum boisé pour homme.jpg" class="w-full h-full" alt="" srcset="">
+                    <!-- <img src="../images/sectionhero.jpg" class="w-1/2 md:h-4/5" alt="" srcset="">
+                    <h1 class="text-2xl w-1/2 text-center">lemystere</h1> -->
+                </div>
+            </section>
 
+            <!-- one perfume -->
+            <section class="mb-8 text-amber-100" id="aboutUs">
+                <h1 class="text-xl text-center">gucci black</h1>
+                <div class="flex flex-col sm:flex-row justify-center items-center">
+                    <div class="flex justify-center items-center sm:w-48 md:w-96">
+                        <div class="hidden sm:flex justify-center">
+                            <img src="../images/Santal Royal Guerlain.jpg" alt="" class=" w-full h-full" srcset="">
+                        </div>
+                        <div class="hidden flex justify-center">
+                            <img src="../images/Santal Royal Guerlain.jpg" alt="" class=" w-full h-full" srcset="">
+                        </div>
+                        <div class="sm:hidden flex justify-center m-2 w-64">
+                            <img src="../images/Polo Double Black_  Cologne Review.jpg" alt="" class=" w-full h-full" srcset="">
+                        </div>
+                    </div>
+
+                    <div class="px-4  sm:w-96 text-sm md:text-base ">
+                        <p class="mb-4">A propo de nous pour des parfumes</p>
+                        <p class="text-justify mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+
+                        </p>
+                        <p class="text-justify hidden md:block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book.versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- motion  -->
+            <!-- <section class="mb-8">
+                <video src=""></video>
+            </section> -->
+
+            <!-- other perfume whit popup for explain this -->
+            <section class="mb-8">
+
+                <div>
+
+                </div>
+            </section>
         </main>
 
 
         <!-- footer -->
         <footer class="my-4">
             <div class="h-px w-full bg-amber-100 mb-2"></div>
-            <div class="text-sm px-3 md:px-0 text-justify">
-                <p class=""> specimen book. It has survived not only five centuries, including versions of Lorem Ipsum</p>
+            <div class="text-sm px-3 md:px-0 text-justify text-amber-100">
+                <p class=""> specimen book. It has survived not only Lorem Ipsum</p>
             </div>
         </footer>
     </div>

@@ -10,12 +10,12 @@
     <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
 </head>
 
-<body class="bg-black text-amber-100">
+<body class="bg-black">
     <div class="container mx-auto lg:px-2 xl:px-4">
         <!-- navbar -->
         <nav>
 
-            <div class="flex justify-between sm:block px-4 sm:px-0">
+            <div class="flex justify-between sm:block px-4 sm:px-0 text-amber-100">
                 <!-- Logo -->
                 <div class="py-3">
                     <h1>Lemystere</h1>
@@ -43,7 +43,7 @@
 
 
             <!-- mobile nav -->
-            <div class=" hidden sm:hidden" id="mobile-menu">
+            <div class=" hidden sm:hidden text-amber-100" id="mobile-menu">
                 <a href="../pages/index.html" class="block py-2 px-4 text-sm hover:text-white">Home</a>
 
                 <a href="../pages/perfume.html" class="block py-2 px-4 text-sm hover:text-white">Parfume</a>
@@ -67,7 +67,7 @@
             </section>
 
             <!-- one perfume -->
-            <section class="mb-8" id="aboutUs">
+            <section class="mb-8 text-amber-100" id="aboutUs">
                 <h1 class="text-xl text-center">gucci black</h1>
                 <div class="flex flex-col sm:flex-row justify-center items-center">
                     <div class="flex justify-center items-center sm:w-48 md:w-96">
@@ -77,7 +77,7 @@
                         <div class="hidden flex justify-center">
                             <img src="../images/Santal Royal Guerlain.jpg" alt="" class=" w-full h-full" srcset="">
                         </div>
-                        <div class="sm:hidden flex justify-center m-2">
+                        <div class="sm:hidden flex justify-center m-2 w-64">
                             <img src="../images/Polo Double Black_  Cologne Review.jpg" alt="" class=" w-full h-full" srcset="">
                         </div>
                     </div>
@@ -95,13 +95,82 @@
             </section>
 
             <!-- motion  -->
-            <!-- <section class="mb-8">
-                <video src=""></video>
-            </section> -->
+            <section class="mb-8">
+                <video class="h-64 mx-auto" autoplay muted loop>
+                    <source src="../videos/video5774163443015749465.mp4" type="video/mp4">
+                    
+                  Your browser does not support the video tag.
+                  </video>
+            </section>
 
             <!-- other perfume whit popup for explain this -->
-            <section class="mb-8">
+            <section class="mb-4">
+                <p class="text-center text-xl text-amber-100">Auo de parfume</p>
+                <div class="flex justify-evenly items-center">
+                    <div class="flex justify-center items-center w-52  modal-open cursor-pointer" id="perfumeLeft">
+                        <img src="../images/black.png" alt="" srcset="">
+                    </div>
+                    <div class="flex flex-col justify-center items-center w-52 modall-open cursor-pointer" id="perfumeCenter">
+                        <img src="../images/black.png" alt="" srcset="">
 
+                    </div>
+                    <div class="flex justify-center items-center w-52 modal-open cursor-pointer" id="perfumeRight">
+                        <img src="../images/black.png" alt="" srcset="">
+                    </div>
+                </div>
+
+                <!--Modal-->
+                <!-- modal left -->
+                <div class="modal hidden fixed w-full h-full top-0 left-0 flex items-center justify-center" id="modalLeft">
+                    <div class="modal-overlay absolute w-full h-full bg-zinc-700 opacity-50"></div>
+                    <div class="w-64 md:w-84 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                        <div class="modal-content bg-hero-pattern bg-modalLeft bg-no-repeat bg-cover py-4 text-left px-6 ">
+                            <div class="modal-body flex flex-col justify-center items-center">
+                                <div class="text-sm text-center my-4">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumum.</p>
+                                </div>
+                                <div class="flex justify-center items-center w-48 relative -left-8 -bottom-4">
+                                    <img src="../images/Perfume Trends to Look Out for This Summer.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- modal center -->
+                <div class="modal hidden fixed w-full h-full top-0 left-0 flex items-center justify-center" id="modalCenter">
+                    <div class="modal-overlay absolute w-full h-full bg-zinc-700 opacity-50"></div>
+                    <div class="w-64 md:w-84 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                        <div class="modal-content bg-hero-pattern bg-modalCenter bg-no-repeat bg-cover py-4 text-left px-6 ">
+                            <div class="modal-body flex flex-col justify-center items-center">
+                                <div class="text-sm text-center my-4">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumum.</p>
+                                </div>
+                                <div class="flex justify-center items-center w-48 relative -left-8 -bottom-4">
+                                    <img src="../images/Santal Royal Guerlain.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal right -->
+
+                <div class="modal hidden fixed w-full h-full top-0 left-0 flex items-center justify-center" id="modalRight">
+                    <div class="modal-overlay absolute w-full h-full bg-zinc-700 opacity-50"></div>
+                    <div class="w-64 md:w-84 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                        <div class="modal-content bg-hero-pattern bg-modalRight bg-no-repeat bg-cover py-4 text-left px-6 ">
+                            <div class="modal-body flex flex-col justify-center items-center">
+                                <div class="text-sm text-center my-4">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumum.</p>
+                                </div>
+                                <div class="flex justify-center items-center w-48 relative -left-8 -bottom-4">
+                                    <img src="../images/aboutone.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 
@@ -109,8 +178,8 @@
         <!-- footer -->
         <footer class="my-4">
             <div class="h-px w-full bg-amber-100 mb-2"></div>
-            <div class="text-sm px-3 md:px-0 text-justify">
-                <p class=""> specimen book. It has survived not only five centuries, including versions of Lorem Ipsum</p>
+            <div class="text-sm px-3 md:px-0 text-justify text-amber-100">
+                <p class=""> specimen book. It has survived not only Lorem Ipsum</p>
             </div>
         </footer>
     </div>
