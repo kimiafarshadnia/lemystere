@@ -20,28 +20,9 @@ $(document).ready(function() {
         $(".Modal").addClass("hidden");
     })
 
-    // var openmodal = document.querySelectorAll('.modal-open')
-    // for (var i = 0; i < openmodal.length; i++) {
-    //     openmodal[i].addEventListener('click', function(event) {
-    //         event.preventDefault()
-    //         toggleModal()
-    //     })
-    // }
-
-    // const overlay = document.querySelector('.modal-overlay')
-    // overlay.addEventListener('click', toggleModal)
-
-
-    // function toggleModal() {
-    //     const modal = document.querySelector('.modal')
-    //     modal.classList.toggle('opacity-0')
-    //     modal.classList.toggle('pointer-events-none')
-    // }
-
-    // modal center
-
-    // Get the modal
-
+    $("#aboutUsMoreClick").click(function() {
+        $("#aboutUsMore").toggleClass("hidden")
+    })
 
 
 });

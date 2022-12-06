@@ -26,10 +26,13 @@ module.exports = {
             colors: {
                 'custom': {
                     100: '#fde68a',
-                    200: '#a5f3fc',
+                    200: '#bae6fd',
                     300: '#fecaca',
                     400: '#e9d5ff',
-                    500: '#a7f3d0'
+                    500: '#a7f3d0',
+                    600: '#d9f99d',
+                    700: '#c7d2fe',
+                    800: '#d1d5db'
                 },
             },
 
