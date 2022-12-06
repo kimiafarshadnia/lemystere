@@ -4,6 +4,13 @@ module.exports = {
 
     theme: {
 
+
+
+        borderRadius: {
+            'none': '0px',
+            '2xl': '8rem'
+        },
+
         extend: {
             backgroundImage: {
                 'modalLeft': "url('../images/Perfume Trends to Look Out for This Summer.png')",
@@ -13,7 +20,18 @@ module.exports = {
 
             dropShadow: {
                 'red': '0 35px 35px rgb(255 33 33 / 15%)',
-            }
+            },
+
+            colors: {
+                'custom': {
+                    100: '#fde68a',
+                    200: '#a5f3fc',
+                    300: '#fecaca',
+                    400: '#e9d5ff',
+                    500: '#a7f3d0'
+                },
+            },
+
         },
     },
     plugins: [
