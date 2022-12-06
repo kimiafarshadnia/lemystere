@@ -20,6 +20,7 @@ module.exports = {
 
             dropShadow: {
                 'red': '0 35px 35px rgb(255 33 33 / 15%)',
+                'white': '0 35px 35px rgb(255 255 255 / 15%)'
             },
 
             colors: {
