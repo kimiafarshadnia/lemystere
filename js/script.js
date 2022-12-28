@@ -24,5 +24,7 @@ $(document).ready(function() {
         $("#aboutUsMore").toggleClass("hidden")
     })
 
-
+    // $("#contactus").click(function() {
+    //     location.replace("index.html")
+    // })
 });
